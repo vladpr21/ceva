@@ -1,0 +1,1676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jitsi.videobridge.VideoBridgeTestSuite" time="0.524" tests="12" errors="8" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
+    <property name="sun.boot.library.path" value="/Users/vladprundus/.sdkman/candidates/java/17.0.1-oracle/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/vladprundus/Downloads/jitsi-videobridge-stable-jitsi-meet_2988"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/vladprundus/Downloads/jitsi-videobridge-stable-jitsi-meet_2988"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/zg/5nqxh_754gs4v36b0fhb9r5m0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.8.5/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/vladprundus/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.8.5/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="12.2.1"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.8.5/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/vladprundus"/>
+    <property name="user.timezone" value="Europe/Bucharest"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="vladprundus"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.home" value="/Users/vladprundus/.sdkman/candidates/java/17.0.1-oracle"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.8.5/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="focusControlTest" classname="org.jitsi.videobridge.FocusControlTest" time="0.01">
+    <error message="Cannot invoke &quot;org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)&quot; because &quot;org.jitsi.videobridge.FocusControlTest.bridge&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)" because "org.jitsi.videobridge.FocusControlTest.bridge" is null
+	at org.jitsi.videobridge.FocusControlTest.focusControlTest(FocusControlTest.java:131)
+</error>
+    <system-err><![CDATA[May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.eventadmin.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.eventadmin.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.service.libjitsi.LibJitsiActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.service.libjitsi.LibJitsiActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.util.UtilActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.util.UtilActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.fileaccess.FileAccessActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.fileaccess.FileAccessActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.configuration.ConfigurationActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.configuration.ConfigurationActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.resources.ResourceManagementActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.resources.ResourceManagementActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.netaddr.NetaddrActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.netaddr.NetaddrActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.packetlogging.PacketLoggingActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.packetlogging.PacketLoggingActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.service.gui.internal.GuiServiceActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.service.gui.internal.GuiServiceActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.service.protocol.media.ProtocolMediaActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.service.protocol.media.ProtocolMediaActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.eventadmin.callstats.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.eventadmin.callstats.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.VideobridgeBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.VideobridgeBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.version.VersionActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.version.VersionActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.RESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.RESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.PublicRESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.PublicRESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.stats.StatsManagerBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.stats.StatsManagerBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.EndpointConnectionStatus
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.EndpointConnectionStatus
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.octo.OctoRelayService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.octo.OctoRelayService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+]]></system-err>
+  </testcase>
+  <testcase name="noFocusControlTest" classname="org.jitsi.videobridge.FocusControlTest" time="0">
+    <error message="Cannot invoke &quot;org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ, int)&quot; because &quot;org.jitsi.videobridge.FocusControlTest.bridge&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ, int)" because "org.jitsi.videobridge.FocusControlTest.bridge" is null
+	at org.jitsi.videobridge.FocusControlTest.noFocusControlTest(FocusControlTest.java:169)
+</error>
+  </testcase>
+  <testcase name="anyFocusControlTest" classname="org.jitsi.videobridge.FocusControlTest" time="0">
+    <error message="Cannot invoke &quot;org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ, int)&quot; because &quot;org.jitsi.videobridge.FocusControlTest.bridge&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ, int)" because "org.jitsi.videobridge.FocusControlTest.bridge" is null
+	at org.jitsi.videobridge.FocusControlTest.anyFocusControlTest(FocusControlTest.java:195)
+</error>
+  </testcase>
+  <testcase name="authorizedSourceTest" classname="org.jitsi.videobridge.FocusControlTest" time="0.001">
+    <error message="Cannot invoke &quot;org.jitsi.videobridge.Videobridge.setAuthorizedSourceRegExp(String)&quot; because &quot;org.jitsi.videobridge.FocusControlTest.bridge&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.setAuthorizedSourceRegExp(String)" because "org.jitsi.videobridge.FocusControlTest.bridge" is null
+	at org.jitsi.videobridge.FocusControlTest.authorizedSourceTest(FocusControlTest.java:222)
+</error>
+  </testcase>
+  <testcase name="testNo_127_0_0_0_CandidateIps" classname="org.jitsi.videobridge.RawUdpConferenceTest" time="0.003">
+    <error message="Cannot invoke &quot;org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)&quot; because &quot;org.jitsi.videobridge.RawUdpConferenceTest.bridge&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)" because "org.jitsi.videobridge.RawUdpConferenceTest.bridge" is null
+	at org.jitsi.videobridge.RawUdpConferenceTest.testNo_127_0_0_0_CandidateIps(RawUdpConferenceTest.java:84)
+</error>
+    <system-err><![CDATA[May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.eventadmin.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.eventadmin.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.service.libjitsi.LibJitsiActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.service.libjitsi.LibJitsiActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.util.UtilActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.util.UtilActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.fileaccess.FileAccessActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.fileaccess.FileAccessActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.configuration.ConfigurationActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.configuration.ConfigurationActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.resources.ResourceManagementActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.resources.ResourceManagementActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.netaddr.NetaddrActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.netaddr.NetaddrActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.packetlogging.PacketLoggingActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.packetlogging.PacketLoggingActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.service.gui.internal.GuiServiceActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.service.gui.internal.GuiServiceActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.service.protocol.media.ProtocolMediaActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.service.protocol.media.ProtocolMediaActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.eventadmin.callstats.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.eventadmin.callstats.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.VideobridgeBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.VideobridgeBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.version.VersionActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.version.VersionActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.RESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.RESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.PublicRESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.PublicRESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.stats.StatsManagerBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.stats.StatsManagerBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.EndpointConnectionStatus
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.EndpointConnectionStatus
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.octo.OctoRelayService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.octo.OctoRelayService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+]]></system-err>
+  </testcase>
+  <testcase name="testMixerChannel" classname="org.jitsi.videobridge.RawUdpConferenceTest" time="0">
+    <error message="Cannot invoke &quot;org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)&quot; because &quot;org.jitsi.videobridge.RawUdpConferenceTest.bridge&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)" because "org.jitsi.videobridge.RawUdpConferenceTest.bridge" is null
+	at org.jitsi.videobridge.RawUdpConferenceTest.testMixerChannel(RawUdpConferenceTest.java:113)
+</error>
+  </testcase>
+  <testcase name="testEndpointConnectivityStatusChangeEvent" classname="org.jitsi.videobridge.EndpointMessageBuilderTest" time="0.006"/>
+  <testcase name="testServerHello" classname="org.jitsi.videobridge.EndpointMessageBuilderTest" time="0"/>
+  <testcase name="testDominantSpeakerEndpointChange" classname="org.jitsi.videobridge.EndpointMessageBuilderTest" time="0"/>
+  <testcase name="testLastNEndpointsChangeEvent" classname="org.jitsi.videobridge.EndpointMessageBuilderTest" time="0.001"/>
+  <testcase name="initializationError" classname="org.jitsi.videobridge.xmpp.MediaStreamTrackFactoryTest" time="0.001">
+    <error message="java.lang.reflect.InvocationTargetException" type="org.objenesis.ObjenesisException">org.objenesis.ObjenesisException: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.IllegalAccessError: class jdk.internal.reflect.ConstructorAccessorImpl loaded by org.powermock.core.classloader.MockClassLoader @6f1fba17 cannot access jdk/internal/reflect superclass jdk.internal.reflect.MagicAccessorImpl
+</error>
+  </testcase>
+  <testcase name="testShutdown" classname="org.jitsi.videobridge.BridgeShutdownTest" time="0.002">
+    <error message="Cannot invoke &quot;org.jitsi.videobridge.Videobridge.getBundleContext()&quot; because &quot;org.jitsi.videobridge.BridgeShutdownTest.bridge&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.getBundleContext()" because "org.jitsi.videobridge.BridgeShutdownTest.bridge" is null
+	at org.jitsi.videobridge.BridgeShutdownTest.testShutdown(BridgeShutdownTest.java:86)
+</error>
+    <system-err><![CDATA[May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.eventadmin.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.eventadmin.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.service.libjitsi.LibJitsiActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.service.libjitsi.LibJitsiActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.util.UtilActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.util.UtilActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.fileaccess.FileAccessActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.fileaccess.FileAccessActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.configuration.ConfigurationActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.configuration.ConfigurationActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.resources.ResourceManagementActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.resources.ResourceManagementActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.netaddr.NetaddrActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.netaddr.NetaddrActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.impl.packetlogging.PacketLoggingActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.impl.packetlogging.PacketLoggingActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.service.gui.internal.GuiServiceActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.service.gui.internal.GuiServiceActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: net.java.sip.communicator.service.protocol.media.ProtocolMediaActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: net.java.sip.communicator.service.protocol.media.ProtocolMediaActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.eventadmin.callstats.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.eventadmin.callstats.Activator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.VideobridgeBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.VideobridgeBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.version.VersionActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.version.VersionActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.RESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.RESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.PublicRESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.rest.PublicRESTBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.stats.StatsManagerBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.stats.StatsManagerBundleActivator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.EndpointConnectionStatus
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.EndpointConnectionStatus
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.BundleImpl start
+SEVERE: Error starting bundle: null
+java.lang.ClassNotFoundException: org.jitsi.videobridge.octo.OctoRelayService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+
+May 02, 2022 8:47:59 PM org.jitsi.impl.osgi.framework.launch.FrameworkImpl startLevelChanged
+SEVERE: Error changing start level
+org.osgi.framework.BundleException: BundleActivator.start
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:327)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+Caused by: java.lang.ClassNotFoundException: org.jitsi.videobridge.octo.OctoRelayService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.jitsi.impl.osgi.framework.BundleImpl.loadClass(BundleImpl.java:237)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:305)
+	... 5 more
+
+]]></system-err>
+  </testcase>
+</testsuite>

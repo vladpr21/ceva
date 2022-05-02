@@ -1,0 +1,10 @@
+org/jitsi/videobridge/VideoBridgeTestSuite.class
+org/jitsi/videobridge/OSGiHandler.class
+org/jitsi/videobridge/BridgeShutdownTest.class
+org/jitsi/videobridge/EndpointMessageBuilderTest.class
+org/jitsi/videobridge/RawUdpConferenceTest.class
+org/jitsi/videobridge/FocusControlTest.class
+org/jitsi/videobridge/ColibriUtilities.class
+org/jitsi/videobridge/OSGiHandler$1.class
+org/jitsi/videobridge/BridgeShutdownTest$TestShutdownService.class
+org/jitsi/videobridge/xmpp/MediaStreamTrackFactoryTest.class

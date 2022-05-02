@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: org.jitsi.videobridge.VideoBridgeTestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.524 sec <<< FAILURE! - in org.jitsi.videobridge.VideoBridgeTestSuite
+focusControlTest(org.jitsi.videobridge.FocusControlTest)  Time elapsed: 0.01 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)" because "org.jitsi.videobridge.FocusControlTest.bridge" is null
+	at org.jitsi.videobridge.FocusControlTest.focusControlTest(FocusControlTest.java:131)
+
+noFocusControlTest(org.jitsi.videobridge.FocusControlTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ, int)" because "org.jitsi.videobridge.FocusControlTest.bridge" is null
+	at org.jitsi.videobridge.FocusControlTest.noFocusControlTest(FocusControlTest.java:169)
+
+anyFocusControlTest(org.jitsi.videobridge.FocusControlTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ, int)" because "org.jitsi.videobridge.FocusControlTest.bridge" is null
+	at org.jitsi.videobridge.FocusControlTest.anyFocusControlTest(FocusControlTest.java:195)
+
+authorizedSourceTest(org.jitsi.videobridge.FocusControlTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.setAuthorizedSourceRegExp(String)" because "org.jitsi.videobridge.FocusControlTest.bridge" is null
+	at org.jitsi.videobridge.FocusControlTest.authorizedSourceTest(FocusControlTest.java:222)
+
+testNo_127_0_0_0_CandidateIps(org.jitsi.videobridge.RawUdpConferenceTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)" because "org.jitsi.videobridge.RawUdpConferenceTest.bridge" is null
+	at org.jitsi.videobridge.RawUdpConferenceTest.testNo_127_0_0_0_CandidateIps(RawUdpConferenceTest.java:84)
+
+testMixerChannel(org.jitsi.videobridge.RawUdpConferenceTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.handleColibriConferenceIQ(net.java.sip.communicator.impl.protocol.jabber.extensions.colibri.ColibriConferenceIQ)" because "org.jitsi.videobridge.RawUdpConferenceTest.bridge" is null
+	at org.jitsi.videobridge.RawUdpConferenceTest.testMixerChannel(RawUdpConferenceTest.java:113)
+
+initializationError(org.jitsi.videobridge.xmpp.MediaStreamTrackFactoryTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.objenesis.ObjenesisException: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.IllegalAccessError: class jdk.internal.reflect.ConstructorAccessorImpl loaded by org.powermock.core.classloader.MockClassLoader @6f1fba17 cannot access jdk/internal/reflect superclass jdk.internal.reflect.MagicAccessorImpl
+
+testShutdown(org.jitsi.videobridge.BridgeShutdownTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.jitsi.videobridge.Videobridge.getBundleContext()" because "org.jitsi.videobridge.BridgeShutdownTest.bridge" is null
+	at org.jitsi.videobridge.BridgeShutdownTest.testShutdown(BridgeShutdownTest.java:86)
+
